@@ -1,0 +1,34 @@
+Started by user rawan Abdelrhman eldeeb
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\E-commerce-Automation
+[E-commerce-Automation] $ cmd.exe /C "mvn clean test && exit %%ERRORLEVEL%%"
+[INFO] Making this build non-interactive, because the environment variable CI equals "true". Disable this detection by removing that variable or adding --force-interactive.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.345 s
+[INFO] Finished at: 2025-04-16T02:50:21+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+Running Selenium Tests: E-commerce Website Tests
+Running Tests for Login Page: 
+[INFO] Test for valid login: PASSED
+[INFO] Test for invalid login: PASSED
+
+Running Tests for Product Search: 
+[INFO] Test for search with valid keyword: PASSED
+[INFO] Test for search with invalid keyword: PASSED
+
+Running Tests for Checkout Process: 
+[INFO] Test for successful checkout with valid details: PASSED
+[INFO] Test for checkout with missing product: FAILED
+[ERROR] AssertionError: Product is missing from the cart.
+
+TestNG Reports Processing: START
+Looking for TestNG results report in workspace using pattern: **/test-output/testng-results.xml
+TestNG results found at: C:\ProgramData\Jenkins\.jenkins\workspace\E-commerce-Automation\test-output\testng-results.xml
+TestNG Report Generated Successfully
+Finished: SUCCESS
